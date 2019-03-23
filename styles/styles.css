@@ -1,0 +1,35 @@
+#logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.carousel .item {
+  height: 400px;
+}
+
+.item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+
+.banner{
+	margin-top: 10px;
+}
+
+.banner .row{
+	display: flex;
+}
+
+.banner .row .column{
+	align-content: space-between;
+}
+
+.card{
+	margin: 10px 0px;
+}
+
+
