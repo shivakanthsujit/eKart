@@ -32,4 +32,9 @@
 	margin: 10px 0px;
 }
 
+.card:hover{
+	border: lightblue solid 1px;
+	padding: 1px;
+}
+
 

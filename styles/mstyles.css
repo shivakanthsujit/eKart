@@ -1,6 +1,31 @@
-
 #logo {
   width: 35px;
   height: 35px;
   margin-right: 5px;
+}
+.banner{
+	margin-top: 10px;
+}
+
+.banner .row{
+	display: flex;
+}
+
+.banner .row .column{
+	align-content: space-between;
+}
+
+.card{
+	margin: 10px 0px;
+}
+
+.card .img .hvr{
+	filter: blur(3px);
+  	-webkit-filter: blur(3px);
+	border: lightblue solid 1px;
+	padding: 1px;
+}
+
+.card-img-overlay.hidden {
+	display: none;
 }
