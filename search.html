@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="Shiva Kanth">
+		<meta property="og:title" content="eKart" >
+		<meta property="og:type" content="website" >
+		<meta property="og:image" content="https://github.com/shivakanthsujit/eKart/raw/master/images/logo.png">
+		<meta property="og:description" content="For all your shopping needs. Get fabulous discounts everyday.">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles/sstyles.css">
+		<link rel="icon" href="images/logo.png">
+        <title>eKart</title>
+        <script type="text/javascript" language="javascript" src="products.json"></script> 
+	</head>
+  	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html"><img id="logo" src="images\logo.png" alt="">eKart</a>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+            </button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Mobiles
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">iPhones</a>
+							<a class="dropdown-item" href="Xiaomi/mobiles.html">Xiaomi</a>
+							<a class="dropdown-item" href="#">Samsung</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Repairs</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Electronics
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Smart Watches</a>
+							<a class="dropdown-item" href="mobiles.html">Headphones</a>
+							<a class="dropdown-item" href="#">Cameras</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Merch
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">T-Shirts</a>
+							<a class="dropdown-item" href="mobiles.html">Books</a>
+							<a class="dropdown-item" href="#">Badges</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+            </div>
+            <a href="../search.html">
+                <span>
+                    <i class="fas fa-search navbar-right" style="font-size: 30px"></i>
+                </span>
+            </a>
+		</nav>
+        <div class="container">
+
+            <div class="row">
+                <div class="jumbotron" style="background-color: white; ">
+                    <h1 class="display-4">Search</h1>
+                    <input type="text" id="searchV" class="form-control mt-4 col-md-7 col-lg-5" aria-describedby="Search" placeholder="Enter product name">   
+                    <button class="btn btn-primary mt-3" id="searchB">Submit</button>
+                    <div class=" column col-md-12" id="noText" style = "display: none;">
+                        <hr class=" my-4">
+                        <p class="lead">No items found.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="search-results">
+
+            </div>
+        </div>
+        <footer class="footer page-footer font-small bg-info mt-4 pt-3">
+  		
+            <div class="container-fluid text-center text-md-left">
+
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase text-white">eKart Enterprises</h5>
+                        <p class="text-white">A company based out of Chennai, India, we fulfill promises of millions of shoppers everyday. Join us today.</p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase text-white">Follow Us</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-white" href="#!">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#!">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#!">Whatsapp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-2 text-white">© 2019 Copyright:
+                    <a class="text-white" href="https://shivakanthsujit.github.io/Spider"> Shiva Kanth Sujit</a>
+            </div>
+                
+        </footer>
+    </body>
+    <script src="scripts/sscripts.js" charset="utf-8"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+</html>
