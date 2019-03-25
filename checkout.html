@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="Shiva Kanth">
+		<meta property="og:title" content="eKart" >
+		<meta property="og:type" content="website" >
+		<meta property="og:image" content="https://github.com/shivakanthsujit/eKart/raw/master/images/logo.png">
+		<meta property="og:description" content="For all your shopping needs. Get fabulous discounts everyday.">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles/checkstyles.css">
+		<link rel="icon" href="images/logo.png">
+		<title>eKart</title>
+	</head>
+  	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html"><img id="logo" src="images\logo.png" alt="">eKart</a>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Mobiles
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">iPhones</a>
+							<a class="dropdown-item" href="Xiaomi/mobiles.html">Xiaomi</a>
+							<a class="dropdown-item" href="#">Samsung</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Repairs</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Electronics
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Smart Watches</a>
+							<a class="dropdown-item" href="mobiles.html">Headphones</a>
+							<a class="dropdown-item" href="#">Cameras</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Merch
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">T-Shirts</a>
+							<a class="dropdown-item" href="mobiles.html">Books</a>
+							<a class="dropdown-item" href="#">Badges</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<a href="search.html">
+				<span>
+					<i class="fas fa-search navbar-right" style="font-size: 30px"></i>
+				</span>
+			</a>
+        </nav>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="column col-md-12">
+                    <h1 class="jumbotron bg-white my-0">
+                        Checkout
+                    </h1>
+                </div>
+            </div>
+            <div class="row" id="shopperDet">
+                <div class="column col-md-10">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    Create an Account
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    Coming soon.... 
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    Continue as a Guest
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <form class="needs-validation" novalidate id="guest">
+                                        <div class="form-row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="fname">First name</label>
+                                                <input type="text" class="form-control" id="fname" placeholder="First name" value="" required>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="lname">Last name</label>
+                                                <input type="text" class="form-control" id="lname" placeholder="Last name" value="" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="address">Address</label>
+                                                <textarea class="form-control" id="address" rows="3" required></textarea>
+                                                <div class="invalid-feedback">
+                                                        Please provide a valid address.
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="city">City</label>
+                                                <input type="text" class="form-control" id="city" placeholder="City" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid city.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                            <label for="state">State</label>
+                                                <select class="custom-select" id="state" required>
+                                                    <option value="" disabled selected hidden>Choose your state</option>
+                                                    <option value="1">Andhra Pradesh</option>
+                                                    <option value="2">Arunachal Pradesh</option>
+                                                    <option value="3">Bihar</option>
+                                                    <option value="3">Chhattisgarh</option>
+                                                    <option value="3">Goa</option>
+                                                    <option value="3">Gujarat</option>
+                                                    <option value="3">Haryana</option>
+                                                    <option value="3">Himachal Pradesh</option>
+                                                    <option value="3">Jammu and Kashmir</option>
+                                                    <option value="3">Jharkhand</option>
+                                                    <option value="3">Karnataka</option>
+                                                    <option value="3">Kerala</option>
+                                                    <option value="3">Madhya Pradesh</option>
+                                                    <option value="3">Maharashtra</option>
+                                                    <option value="3">Manipur</option>
+                                                    <option value="3">Meghalaya</option>
+                                                    <option value="3">Mizoram</option>
+                                                    <option value="3">Nagaland</option>
+                                                    <option value="3">Odisha</option>
+                                                    <option value="3">Punjab</option>
+                                                    <option value="3">Rajasthan</option>
+                                                    <option value="3">Sikkim</option>
+                                                    <option value="3">Tamil Nadu</option>
+                                                    <option value="3">Telangana</option>
+                                                    <option value="3">Tripura</option>
+                                                    <option value="3">Uttar Pradesh</option>
+                                                    <option value="3">Uttarakhand</option>
+                                                    <option value="3">West Bengal</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-3 mb-3">
+                                                <label for="zip">Zip</label>
+                                                <input type="text" class="form-control" id="zip" placeholder="Zip" required>
+                                                <small id="zipInvalid" class="form-text text-danger hide">
+                                                    Please provide a valid zip.
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck">
+                                                    Agree to terms and conditions
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary" id="guestBtn" >Verify</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>    
+        <div class="container" id="invoice" >
+
+            <div class="row my-5" >
+                <div class="column col-md-10" >
+                    <div class="card" style="width: 22rem">
+                    <div class="card-body">
+                            <h4 class="card-title" id="invName"></h4>
+                            <hr class="my-3">
+                            <p class="card-text" id="invAddr"></p>
+                    </div> 
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-6">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Your Product</td>
+                        <td>1</td>
+                        <td>Product Price</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row my-6">
+                <div class="column col-md-7 col-md-push-5">
+                    <div class="h5" id="totPrice"> Total: Rs.20,999</div>
+                </div>
+            </div>
+            <button class="btn btn-primary my-4" id="placeOrder">Place Order</button>
+            <div class="alert alert-info my-4" role="alert" id="finalAlert">
+                    Your order has been placed! Click <a href="index.html" class="alert-link">here</a> to go to the homepage.
+            </div>
+        </div>
+        
+        <footer class="footer page-footer font-small bg-info mt-4 pt-3">
+  		
+	    	<div class="container-fluid text-center text-md-left">
+
+			    <div class="row">
+				    <div class="col-md-6 mt-md-0 mt-3">
+					<h5 class="text-uppercase text-white">eKart Enterprises</h5>
+						<p class="text-white">A company based out of Chennai, India, we fulfill promises of millions of shoppers everyday. Join us today.</p>
+					</div>
+			        <hr class="clearfix w-100 d-md-none pb-3">
+					<div class="col-md-3 mb-md-0 mb-3">
+			            <h5 class="text-uppercase text-white">Follow Us</h5>
+
+			            <ul class="list-unstyled">
+							<li>
+								<a class="text-white" href="#!">Facebook</a>
+							</li>
+							<li>
+								<a class="text-white" href="#!">Instagram</a>
+							</li>
+							<li>
+								<a class="text-white" href="#!">Whatsapp</a>
+							</li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+			<div class="footer-copyright text-center py-2 text-white">© 2019 Copyright:
+					<a class="text-white" href="https://shivakanthsujit.github.io/Spider"> Shiva Kanth Sujit</a>
+			</div>
+			
+		</footer>
+      </body>
+      <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+      <script src="scripts/checkscripts.js" charset="utf-8"></script>
+      <script>
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+</html>
