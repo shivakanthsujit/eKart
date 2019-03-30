@@ -1,3 +1,12 @@
+var search = document.getElementById('searchB');
+var searchTerm = document.getElementById('searchT');
+
+search.addEventListener("click",function test() {
+  window.localStorage.setItem("searchTerm",searchTerm.value);
+  window.localStorage.setItem("searchBtnClick","yes");
+  window.location.href = 'search.html'
+});
+
 $(document).ready(function(){
 $("#invoice").hide();
 $('.alert').hide();
@@ -30,6 +39,9 @@ $("#guestBtn").click(function(){
         var addr = $("#address").val() + "\n" + $("#city").val() + "-" + $("#zip").val() + "\n" + $('select').children(':selected').text(); 
         $("#invName").text(name);
         $("#invAddr").text(addr);
+        $('#pName').text(window.localStorage.getItem('name'));
+        $('#pPrice').text(window.localStorage.getItem('price'));
+        $('#totPrice').text("Total: Rs."+window.localStorage.getItem('price'));
         $("#shopperDet").hide(2000);
         $("#invoice").show(2000);
 
